@@ -412,7 +412,12 @@ background: #fff;
   max-width: 264px;
 }
 
-.icon-block{
+.icon-list{
+
+}
+
+.footer-icon-list{
+  display: flex;
   max-width: 208px;
   justify-content: flex-start;
   gap: 16px;
