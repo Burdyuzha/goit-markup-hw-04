@@ -34,7 +34,7 @@ button{
   max-width: 1158px;
   margin: 0 auto;
 }
-
+/* header */
 .header-container{
   display: flex;
 }
@@ -81,6 +81,10 @@ button{
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-nav-link:hover,
@@ -106,6 +110,9 @@ button{
   color: #434455;
   padding: 24px 0;
   display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-link:hover,
@@ -113,7 +120,7 @@ button{
   color: #404bbf;
 }
 
-
+/* solution */
 .solution{
   padding-top: 188px;
   padding-bottom: 188px;
@@ -150,13 +157,16 @@ button{
   min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solution-button:hover,
 .solution-button:focus{
   background-color: #404bbf;
 }
-
+/* about */
 .about{
   padding: 120px 0;
 }
@@ -186,6 +196,24 @@ button{
   display: flex;
   gap: 24px;
 }
+
+.about-icon-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+
+.about-icon{
+  
+  
+}
+
 .about-item{
   width: calc((100% - 3*24px)/4);
 }
@@ -206,12 +234,15 @@ button{
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-
+/* team */
 .team{
   background-color: #f4f4fd;
   padding: 120px 0;
 }
 
+.team-container{
+  max-width: 1440px;
+}
 
 .team-title{
   font-weight: 700;
@@ -252,13 +283,47 @@ button{
   padding: 32px 0;
 }
 
+
+.team-img{
+  width: 100%;
+}
 .team-text{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
+}
+.team-icon-block{
+  display: flex;
+  justify-content: space-around;
 }
 
+.team-icon-link{
+  fill: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus{
+  background-color: #31d0aa;
+
+
+}
+.team-icon{
+  
+}
+
+/* portfolio */
 .portfolio{
   padding: 120px 0;
 }
@@ -283,6 +348,15 @@ button{
 
 .portfolio-item{
   width: calc((100% - 48px)/3);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus{
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+background: #fff;
 }
 
 .portfolio-block{
@@ -306,11 +380,17 @@ button{
   letter-spacing: 0.02em;
 }
 
-
+/* footer */
 .footer{
   background-color: #2e2f42;
   padding: 100px 0;
 }
+
+.footer-container{
+  display: flex;
+  gap: 120px;
+}
+
 
 .footer-logo{
   display: inline-block;
@@ -327,4 +407,19 @@ button{
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.icon-block{
+  max-width: 208px;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.footer-icon-block-text{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
 }
