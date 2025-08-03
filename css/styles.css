@@ -209,11 +209,6 @@ button{
   margin-bottom: 8px;
 }
 
-.about-icon{
-  
-  
-}
-
 .about-item{
   width: calc((100% - 3*24px)/4);
 }
@@ -294,7 +289,7 @@ button{
   text-align: center;
   margin-bottom: 8px;
 }
-.team-icon-block{
+.team-icon-list{
   display: flex;
   justify-content: space-around;
 }
@@ -316,11 +311,6 @@ button{
 .team-icon-link:hover,
 .team-icon-link:focus{
   background-color: #31d0aa;
-
-
-}
-.team-icon{
-  
 }
 
 /* portfolio */
@@ -410,10 +400,6 @@ background: #fff;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-}
-
-.icon-list{
-
 }
 
 .footer-icon-list{
