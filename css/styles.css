@@ -379,7 +379,35 @@ button{
 .portfolio-item:hover,
 .portfolio-item:focus{
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-background: #fff;
+  background: #fff;
+}
+
+
+.portfolio-image-block{
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-image-block:hover .portfolio-overlay{
+  transform: translateY(0);
+}
+
+.portfolio-overlay{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height:100%;
+  background-color:#4d5ae5;
+  transform: translateY(100%);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px 0;
+  transition-property:transform ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-block{
