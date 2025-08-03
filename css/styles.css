@@ -88,7 +88,23 @@ button{
   position: relative;
 }
 
-.header-nav-link::after{
+.first-link{
+  color: #404bbf;
+}
+
+.first-link::after{
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 2px;
+  background-color: #404bbf;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+  left: 0;
+}
+/* .header-nav-link:hover::after,
+.header-nav-link:focus::after{
   content: "";
   display: block;
   position: absolute;
@@ -103,7 +119,7 @@ button{
 .header-nav-link:hover,
 .header-nav-link:focus{
   color: #404bbf;
-}
+}  */
 
 .header-address{
   font-style: normal;
