@@ -267,10 +267,6 @@ button{
   padding: 120px 0;
 }
 
-.team-container{
-  max-width: 1440px;
-}
-
 .team-title{
   font-weight: 700;
   font-size: 36px;
@@ -388,7 +384,7 @@ button{
   overflow: hidden;
 }
 
-.portfolio-image-block:hover .portfolio-overlay{
+.portfolio-item:hover .portfolio-overlay{
   transform: translateY(0%);
 }
 
